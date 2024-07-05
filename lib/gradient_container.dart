@@ -9,8 +9,7 @@ var endAllingment = Alignment.bottomCenter;
 class GradientContainer extends StatelessWidget {
   // first text is class member secong is argument
   const GradientContainer(this.color1, this.color2, {super.key});
-  final Color color1;
-  final Color color2;
+  final Color color1, color2;
 
   @override
   Widget build(context) {
@@ -20,11 +19,11 @@ class GradientContainer extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [color1, color2],
-          begin: stAllingment,
+          begin: Alignment.topCenter,
           end: endAllingment,
         ),
       ),
-      child: Center(
+      child: const Center(
         child: DiceRoller(),
       ),
     );

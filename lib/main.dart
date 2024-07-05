@@ -5,14 +5,15 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.amberAccent,
-            title: const Text('Dice Generator'),
-          ),
-          body: const GradientContainer(
-            Color.fromARGB(255, 40, 4, 133),
-            Color.fromARGB(255, 69, 7, 98),
-          )),
+        appBar: AppBar(
+          backgroundColor: Colors.purple,
+          title: const Text('Dice Generator'),
+        ),
+        body: const GradientContainer(
+          Color.fromARGB(255, 40, 4, 133),
+          Color.fromARGB(255, 69, 7, 98),
+        ),
+      ),
     ),
   );
 }
