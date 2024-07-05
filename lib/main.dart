@@ -3,12 +3,16 @@ import 'package:flutter_application_1/gradient_container.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
-          body: GradientContainer(
-        Color.fromARGB(255, 40, 4, 133),
-        Color.fromARGB(255, 69, 7, 98),
-      )),
+          appBar: AppBar(
+            backgroundColor: Colors.amberAccent,
+            title: const Text('Dice Generator'),
+          ),
+          body: const GradientContainer(
+            Color.fromARGB(255, 40, 4, 133),
+            Color.fromARGB(255, 69, 7, 98),
+          )),
     ),
   );
 }
